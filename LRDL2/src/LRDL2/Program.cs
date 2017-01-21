@@ -1,4 +1,4 @@
-﻿using LRDL2.menu;
+﻿using LRDL2.Menu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,7 @@ namespace LRDL2
 
         public static void Main(string[] args)
         {
+            Start.Configuration.Initialize();
             MainMenu.Init();
         }
     }
