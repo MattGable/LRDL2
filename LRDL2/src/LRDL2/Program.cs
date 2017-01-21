@@ -8,11 +8,10 @@ namespace LRDL2
 {
     public class Program
     {
-
         public static void Main(string[] args)
         {
             Start.Configuration.Initialize();
-            MainMenu.Init();
+            MainMenu.WriteMenu();
         }
     }
 }

@@ -7,13 +7,15 @@ namespace LRDL2.Menu
 {
     public static class MainMenu
     {
-       public static void Init ()
+       public static void WriteMenu ()
        {
-            
             while (true)
             {
+
                 Console.WriteLine("############################################################");
-                Console.WriteLine("#                      --- LRDL2 ---       \u0066\u20AA    #");
+                Console.WriteLine("#                      \u0489--- LRDL2 ---\u0489                      #");
+                Console.WriteLine("#                                                          #");
+                Console.WriteLine("# 'start' starts a new game                                #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("# 'random' generates a random decimal number.              #");
                 Console.WriteLine("#                                                          #");
@@ -32,7 +34,11 @@ namespace LRDL2.Menu
                 {
                     string userChoice = Console.ReadLine();
 
-                    if (userChoice.ToLower().Equals("random"))
+                    if (userChoice.ToLower().Equals("start"))
+                    {
+                        Console.WriteLine("You picked sart.");
+                    }
+                    else if (userChoice.ToLower().Equals("random"))
                     {
                         Console.WriteLine("You picked random.");
                     }
