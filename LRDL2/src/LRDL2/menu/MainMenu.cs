@@ -30,6 +30,7 @@ namespace LRDL2.menu
                 try
                 {
                     string userChoice = Console.ReadLine();
+
                     if (userChoice.ToLower().Equals("random"))
                     {
                         Console.WriteLine("You picked random.");
@@ -41,11 +42,9 @@ namespace LRDL2.menu
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Console.Error.WriteLine(e);
                 }
-                //TODO: Make somethign a bit more useful here.
-                Console.WriteLine("Press enter to exit...");
-                Console.ReadLine();
+
                 Console.Clear();
             }
         }
