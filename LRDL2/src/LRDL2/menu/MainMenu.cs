@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LRDL2.menu
+namespace LRDL2.Menu
 {
     public static class MainMenu
     {
        public static void Init ()
        {
+            
             while (true)
             {
                 Console.WriteLine("############################################################");
-                Console.WriteLine("#                      --- LRDL2 ---                       #");
+                Console.WriteLine("#                      --- LRDL2 ---       \u0066\u20AA    #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("# 'random' generates a random decimal number.              #");
                 Console.WriteLine("#                                                          #");
