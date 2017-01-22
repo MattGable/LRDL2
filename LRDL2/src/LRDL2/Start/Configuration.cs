@@ -10,7 +10,7 @@ namespace LRDL2.Start
     {
         public static void Initialize ()
         {
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.Unicode;
         }
         
     }

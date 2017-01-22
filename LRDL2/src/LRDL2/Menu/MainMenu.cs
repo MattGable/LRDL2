@@ -13,7 +13,7 @@ namespace LRDL2.Menu
             {
 
                 Console.WriteLine("############################################################");
-                Console.WriteLine("#                      \u0489--- LRDL2 ---\u0489                      #");
+                Console.WriteLine("#                      \U00000259--- LRDL2 ---\u0029                      #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("# 'start' starts a new game                                #");
                 Console.WriteLine("#                                                          #");
