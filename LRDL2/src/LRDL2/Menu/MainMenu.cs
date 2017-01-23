@@ -11,6 +11,7 @@ namespace LRDL2.Menu
        {
             while (true)
             {
+                Console.WriteLine("test");
                 Console.WriteLine("############################################################");
                 Console.WriteLine("#                      \u00A4--- LRDL2 ---\u00A4                     #");
                 Console.WriteLine("#                                                          #");

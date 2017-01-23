@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LRDL2.View
+namespace LRDL2.Tiles
 {
-    public class View
+    public class Tile
     {
+        public char MySymbol { get; set; }
     }
 }
