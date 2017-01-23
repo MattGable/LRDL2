@@ -13,7 +13,7 @@ namespace LRDL2.Menu
             {
 
                 Console.WriteLine("############################################################");
-                Console.WriteLine("#                      \U00000259--- LRDL2 ---\u0029                      #");
+                Console.WriteLine("#                      \u00A4--- LRDL2 ---\u00A4                     #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("# 'start' starts a new game                                #");
                 Console.WriteLine("#                                                          #");
@@ -25,7 +25,7 @@ namespace LRDL2.Menu
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("#                                                          #");
-                Console.WriteLine("#                                                          #");
+                Console.WriteLine("# 'test' runs the current test script.                     #");
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("############################################################");
 
@@ -36,7 +36,7 @@ namespace LRDL2.Menu
 
                     if (userChoice.ToLower().Equals("start"))
                     {
-                        Console.WriteLine("You picked sart.");
+                        Console.WriteLine("You picked start.");
                     }
                     else if (userChoice.ToLower().Equals("random"))
                     {
@@ -45,6 +45,14 @@ namespace LRDL2.Menu
                     else if (userChoice.ToLower().Equals("save"))
                     {
                         Console.WriteLine("You picked save.");
+                    }
+                    else if (userChoice.ToLower().Equals("test"))
+                    {
+                        Console.WriteLine("You picked test.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid argument. Please try again.");
                     }
                 }
                 catch (Exception e)
