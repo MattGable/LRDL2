@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace LRDL2.Tiles
 {
-    public abstract class Tile
+    public class FloorTile : Tile
     {
-        public char MySymbol { get; set; }
+        public FloorTile ()
+        {
+            MySymbol = '.';
+        }
     }
 }
