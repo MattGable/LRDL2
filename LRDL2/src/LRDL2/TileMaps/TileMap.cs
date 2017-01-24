@@ -1,4 +1,5 @@
-﻿using LRDL2.Tiles;
+﻿using LRDL2.Start;
+using LRDL2.Tiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +15,28 @@ namespace LRDL2.TileMaps
     /// </summary>
     public class TileMap
     {
-        //The dimensions of the TileMap;
-        private int mapWidth;
-        private int mapHeight;
+        /// <summary>
+        /// Declare the array of FloorTiles for the game floor.
+        /// </summary>
+        /// <remarks>
+        /// TODO: Probably hide this behind a private visibility
+        /// </remarks>
+        public FloorTile[,] map = new FloorTile[Configuration.MapWidth, Configuration.MapHeight];
 
-        //The array holding the Tiles.
-        FloorTile[,] map;
 
         /// <summary>
         /// Creates a tile map of the specified dimensions.
         /// </summary>
-        /// <param name="mapWidthInput">Width of the map to be created.</param>
-        /// <param name="mapHeightInput">Height of the map to be created.</param>
-        public TileMap (int mapWidthInput, int mapHeightInput)
+        public TileMap ()
         {
-            //Initialize the dimensions of the TileMap.
-            mapWidth = mapWidthInput;
-            mapHeight = mapHeightInput;
-
             //Initialize the map for this TileMap.
-            map = new FloorTile[mapWidth, mapHeight];
+            for (int width = 0; width < Configuration.MapWidth; width++)
+            {
+                for (int height = 0; height < Configuration.MapHeight; height++)
+                {
+                    map[width, height] = new FloorTile();
+                }
+            }
         }
     }
 }

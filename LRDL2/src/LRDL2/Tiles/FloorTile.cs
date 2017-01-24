@@ -7,7 +7,7 @@ namespace LRDL2.Tiles
 {
     public class FloorTile : Tile
     {
-        public FloorTile ()
+        public FloorTile()
         {
             MySymbol = '.';
         }
