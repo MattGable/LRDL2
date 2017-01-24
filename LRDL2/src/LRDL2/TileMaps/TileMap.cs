@@ -15,25 +15,25 @@ namespace LRDL2.TileMaps
     public class TileMap
     {
         //The dimensions of the TileMap;
-        private int _mapWidth;
-        private int _mapHeight;
+        private int mapWidth;
+        private int mapHeight;
 
         //The array holding the Tiles.
-        FloorTile[,] _map;
+        FloorTile[,] map;
 
         /// <summary>
         /// Creates a tile map of the specified dimensions.
         /// </summary>
-        /// <param name="mapWidth">Width of the map to be created.</param>
-        /// <param name="mapHeight">Height of the map to be created.</param>
-        public TileMap (int mapWidth, int mapHeight)
+        /// <param name="mapWidthInput">Width of the map to be created.</param>
+        /// <param name="mapHeightInput">Height of the map to be created.</param>
+        public TileMap (int mapWidthInput, int mapHeightInput)
         {
             //Initialize the dimensions of the TileMap.
-            _mapWidth = mapWidth;
-            _mapHeight = mapHeight;
+            mapWidth = mapWidthInput;
+            mapHeight = mapHeightInput;
 
             //Initialize the map for this TileMap.
-            _map = new FloorTile[_mapWidth, _mapHeight];
+            map = new FloorTile[mapWidth, mapHeight];
         }
     }
 }
