@@ -27,6 +27,8 @@ namespace LRDL2.Menu
                 Console.WriteLine("#                                                          #");
                 Console.WriteLine("# 'test' runs the current test script.                     #");
                 Console.WriteLine("#                                                          #");
+                Console.WriteLine("# 'exit' closes LRDL2.                                     #");
+                Console.WriteLine("#                                                          #");
                 Console.WriteLine("############################################################");
 
                 Console.WriteLine("Please enter a choice from the above menu.");
@@ -54,6 +56,12 @@ namespace LRDL2.Menu
                         Console.Clear();
                         Console.WriteLine("You picked test.");
                         TestScript.Run();
+                    }
+                    else if (userChoice.ToLower().Equals("exit"))
+                    {
+
+                        Console.WriteLine("You picked exit.");
+                        Environment.Exit(0);
                     }
                     else
                     {
