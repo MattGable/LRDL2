@@ -19,7 +19,7 @@ namespace LRDL2.TileMaps
         /// Declare the array of FloorTiles for the game floor.
         /// </summary>
         /// <remarks>
-        /// TODO: Probably hide this behind a private visibility
+        /// TODO: Probably hide this behind a private visibility.
         /// </remarks>
         public FloorTile[,] map = new FloorTile[Configuration.MapWidth, Configuration.MapHeight];
 

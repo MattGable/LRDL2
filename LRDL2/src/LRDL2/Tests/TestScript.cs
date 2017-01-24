@@ -16,11 +16,25 @@ namespace LRDL2.Tests
             FloorTile testFloorTile = new FloorTile();
             Console.WriteLine("FloorTile's symbol: " + testFloorTile.MySymbol);
 
-            //Creating a TileMap of FLoorTiles
+            //Creating a TileMap of FloorTiles
             TileMap testTileMap = new TileMap();
 
             //Printing a tile from testTileMap
             Console.WriteLine("Symbol of map[1,1]'s FloorTile: " + testTileMap.map[1, 1].MySymbol);
+
+            //Manually printing the TileMap
+            for (int height = 0; height < Configuration.MapHeight - 1; height++)
+            {
+                for (int width = 0; width < Configuration.MapWidth - 1; width++)
+                {
+                    Console.Write(testTileMap.map[width, height].MySymbol);
+
+                    if (width == Configuration.MapWidth - 2)
+                    {
+                        Console.WriteLine();
+                    }
+                }
+            }
 
       
         }

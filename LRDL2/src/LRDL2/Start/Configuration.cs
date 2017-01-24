@@ -11,7 +11,7 @@ namespace LRDL2.Start
         /// <summary>
         /// Global constants for universal attributes, such as map dimensions.
         /// </summary>
-        public static int MapWidth = 60;
+        public static int MapWidth = 120;
         public static int MapHeight = 40;
 
         /// <summary>

@@ -59,7 +59,6 @@ namespace LRDL2.Menu
                     }
                     else if (userChoice.ToLower().Equals("exit"))
                     {
-
                         Console.WriteLine("You picked exit.");
                         Environment.Exit(0);
                     }
