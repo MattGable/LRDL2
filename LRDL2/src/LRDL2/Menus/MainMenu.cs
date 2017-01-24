@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LRDL2.Tests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -35,31 +36,38 @@ namespace LRDL2.Menu
 
                     if (userChoice.ToLower().Equals("start"))
                     {
+                        Console.Clear();
                         Console.WriteLine("You picked start.");
                     }
                     else if (userChoice.ToLower().Equals("random"))
                     {
+                        Console.Clear();
                         Console.WriteLine("You picked random.");
                     }
                     else if (userChoice.ToLower().Equals("save"))
                     {
+                        Console.Clear();
                         Console.WriteLine("You picked save.");
                     }
                     else if (userChoice.ToLower().Equals("test"))
                     {
+                        Console.Clear();
                         Console.WriteLine("You picked test.");
+                        TestScript.Run();
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("Invalid argument. Please try again.");
                     }
                 }
                 catch (Exception e)
                 {
+                    Console.Clear();
                     Console.Error.WriteLine(e);
                 }
 
-                Console.Clear();
+
             }
         }
 

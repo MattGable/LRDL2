@@ -8,10 +8,9 @@ namespace LRDL2.Start
 {
     public static class Configuration
     {
-        public static void Initialize ()
+        public static void ApplyStartingSettings ()
         {
             Console.OutputEncoding = Encoding.UTF8;
         }
-        
     }
 }

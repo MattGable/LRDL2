@@ -10,7 +10,7 @@ namespace LRDL2
     {
         public static void Main(string[] args)
         {
-            Start.Configuration.Initialize();
+            Start.Configuration.ApplyStartingSettings();
             MainMenu.WriteMenu();
         }
     }
