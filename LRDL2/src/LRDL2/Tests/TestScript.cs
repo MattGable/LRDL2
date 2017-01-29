@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace LRDL2.Tests
 {
+    /// <summary>
+    /// A container for testing modules.
+    /// </summary>
     public class TestScript
     {
         /// <summary>
