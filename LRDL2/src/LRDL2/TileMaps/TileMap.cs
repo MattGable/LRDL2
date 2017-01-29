@@ -19,7 +19,7 @@ namespace LRDL2.TileMaps
         /// Creates the floor tiles for the engine.
         /// </summary>
         /// 
-        public FloorTile[,] map { get; set; }
+        public FloorTile[,] Map { get; set; }
 
         /// <summary>
         /// Creates a tile map of the specified dimensions.
@@ -27,14 +27,14 @@ namespace LRDL2.TileMaps
         public TileMap ()
         {
             //Initialize "blank" floor of tiles of the preset dimensions.
-            map = new FloorTile[Configuration.MapWidth, Configuration.MapHeight];
+            Map = new FloorTile[Configuration.MapWidth, Configuration.MapHeight];
 
             //Instantiate each Tile for this TileMap.
             for (int width = 0; width < Configuration.MapWidth; width++)
             {
                 for (int height = 0; height < Configuration.MapHeight; height++)
                 {
-                    map[width, height] = new FloorTile();
+                    Map[width, height] = new FloorTile();
                 }
             }
         }
