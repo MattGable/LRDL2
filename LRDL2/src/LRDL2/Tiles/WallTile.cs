@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace LRDL2.Tiles
 {
-    public class FloorTile : Tile
+    public class WallTile : Tile
     {
-        public FloorTile()
+        public WallTile()
         {
-            MySymbol = '.';
-            MyColor = ConsoleColor.DarkGray;
+            MySymbol = '#';
+            MyColor = ConsoleColor.Gray;
         }
     }
 }

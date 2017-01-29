@@ -8,5 +8,6 @@ namespace LRDL2.Tiles
     public abstract class Tile
     {
         public char MySymbol { get; set; }
+        public ConsoleColor MyColor { get; set; }
     }
 }
