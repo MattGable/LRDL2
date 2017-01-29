@@ -12,6 +12,7 @@ namespace LRDL2.Tests
     {
         public static void Run ()
         {
+            Console.Clear();
             //Creating a FloorTile and printing its default symbol.
             FloorTile testFloorTile = new FloorTile();
             Console.WriteLine("FloorTile's symbol: " + testFloorTile.MySymbol);

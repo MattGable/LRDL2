@@ -32,28 +32,27 @@ namespace LRDL2.Menu
                 Console.WriteLine("############################################################");
 
                 Console.WriteLine("Please enter a choice from the above menu.");
+
                 try
                 {
                     string userChoice = Console.ReadLine();
 
+                    Console.Clear();
+
                     if (userChoice.ToLower().Equals("start"))
                     {
-                        Console.Clear();
                         Console.WriteLine("You picked start.");
                     }
                     else if (userChoice.ToLower().Equals("random"))
                     {
-                        Console.Clear();
                         Console.WriteLine("You picked random.");
                     }
                     else if (userChoice.ToLower().Equals("save"))
                     {
-                        Console.Clear();
                         Console.WriteLine("You picked save.");
                     }
                     else if (userChoice.ToLower().Equals("test"))
                     {
-                        Console.Clear();
                         Console.WriteLine("You picked test.");
                         TestScript.Run();
                     }
@@ -64,19 +63,14 @@ namespace LRDL2.Menu
                     }
                     else
                     {
-                        Console.Clear();
                         Console.WriteLine("Invalid argument. Please try again.");
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.Clear();
                     Console.Error.WriteLine(e);
                 }
-
-
             }
         }
-
     }
 }
