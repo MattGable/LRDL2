@@ -31,12 +31,12 @@ namespace LRDL2.Tests
             Console.WriteLine("Symbol of Map[1,1]'s FloorTile: " + testTileMap.Map[1, 1].MySymbol);
 
             //Print the entire Map.
-            testTileMap.printMap();
+            testTileMap.PrintMap();
 
             //Manually adding a few WallTiles.
             testTileMap.Map[10, 10] = new WallTile();
 
-            testTileMap.printMap();
+            testTileMap.PrintMap();
         }
     }
 }

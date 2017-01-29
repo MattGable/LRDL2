@@ -45,7 +45,7 @@ namespace LRDL2.TileMaps
         /// <remarks>
         /// TODO: Consider moving this to a view.
         /// </remarks>
-        public void printMap ()
+        public void PrintMap ()
         {
             //Manually printing the TileMap
             for (int height = 0; height < Configuration.MapHeight - 1; height++)
