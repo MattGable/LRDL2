@@ -1,6 +1,9 @@
-﻿using LRDL2.Start;
+﻿using LRDL2.Players;
+using LRDL2.Start;
 using LRDL2.TileMaps;
 using LRDL2.Tiles;
+using LRDL2.ViewModels;
+using LRDL2.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +40,16 @@ namespace LRDL2.Tests
             testTileMap.Map[10, 10] = new WallTile();
 
             testTileMap.PrintMap();
+
+            //Manually creating and print a player character
+            Player testPlayer = new Player(10, 10);
+            Console.WriteLine("Player's symbol is: " + testPlayer.MySymbol);
+
+            //TODO: CONTROLLER should do this!
+            //WOrking through Model - View - Controller
+            MainMapViewModel testMainMapViewModel = new MainMapViewModel(testTileMap, testPlayer);
+            MainMapView testMainMapView = new MainMapView(testMainMapViewModel);
+            testMainMapView.Render();
         }
     }
 }

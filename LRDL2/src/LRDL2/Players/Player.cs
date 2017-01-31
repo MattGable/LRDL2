@@ -9,10 +9,12 @@ namespace LRDL2.Players
     {
         public int MyX { get; set; }
         public int MyY { get; set; }
+        public char MySymbol { get; set; }
 
         public Player (int startingX, int startingY)
         {
-            //Tesst starting values
+            //Test starting values
+            MySymbol = '@';
             MyX = startingX;
             MyY = startingY;
         }
