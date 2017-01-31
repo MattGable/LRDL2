@@ -7,5 +7,14 @@ namespace LRDL2.Players
 {
     public class Player
     {
+        public int MyX { get; set; }
+        public int MyY { get; set; }
+
+        public Player (int startingX, int startingY)
+        {
+            //Tesst starting values
+            MyX = startingX;
+            MyY = startingY;
+        }
     }
 }
