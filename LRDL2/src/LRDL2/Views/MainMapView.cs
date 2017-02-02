@@ -10,6 +10,7 @@ namespace LRDL2.Views
     public class MainMapView : View
     {
         MainMapViewModel myMainMapView;
+
         public MainMapView (MainMapViewModel inputMainMapViewModel)
         {
             myMainMapView = inputMainMapViewModel;
@@ -17,7 +18,7 @@ namespace LRDL2.Views
 
         public void Render ()
         {
-            //TODO: FOr testing only. 
+            //TODO: For testing only. 
             Console.WriteLine("WRITING FROM VIEW!");
             //Manually printing the TileMap
             for (int height = 0; height < Configuration.MapHeight - 1; height++)

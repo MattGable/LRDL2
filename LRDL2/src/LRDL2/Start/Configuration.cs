@@ -13,7 +13,8 @@ namespace LRDL2.Start
         /// </summary>
         public static int MapWidth = 80;
         public static int MapHeight = 30;
-
+        public static int PlayerStartX = 10;
+        public static int PlayerStartY = 10;
         /// <summary>
         /// Applies necessary encodings.
         /// </summary>

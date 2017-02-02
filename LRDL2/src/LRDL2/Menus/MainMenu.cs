@@ -1,4 +1,6 @@
-﻿using LRDL2.Tests;
+﻿using LRDL2.Controllers;
+using LRDL2.Services;
+using LRDL2.Tests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +44,12 @@ namespace LRDL2.Menu
                     if (userChoice.ToLower().Equals("start"))
                     {
                         Console.WriteLine("You picked start.");
+
+                        //TODO: For now, this is implemented here.
+                        //Create the services needed
+                        MainService MyServices = new MainService();
+                        MainMapController MyController = new MainMapController(MyServices);
+                        MyController.ControllerService.ServiceMainMapView.Render();
                     }
                     else if (userChoice.ToLower().Equals("random"))
                     {
