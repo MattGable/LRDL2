@@ -7,16 +7,16 @@ namespace LRDL2.Players
 {
     public class Player
     {
-        public int MyX { get; set; }
-        public int MyY { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
         public char MySymbol { get; set; }
 
         public Player (int startingX, int startingY)
         {
             //Test starting values
             MySymbol = '@';
-            MyX = startingX;
-            MyY = startingY;
+            X = startingX;
+            Y = startingY;
         }
     }
 }

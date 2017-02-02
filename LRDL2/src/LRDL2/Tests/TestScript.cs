@@ -41,12 +41,11 @@ namespace LRDL2.Tests
 
             testTileMap.PrintMap();
 
-            //Manually creating and print a player character
+            //Creating and print a player character.
             Player testPlayer = new Player(10, 10);
             Console.WriteLine("Player's symbol is: " + testPlayer.MySymbol);
 
-            //TODO: CONTROLLER should do this!
-            //WOrking through Model - View - Controller
+            //Creating a MapView and rendering it.
             MainMapViewModel testMainMapViewModel = new MainMapViewModel(testTileMap, testPlayer);
             MainMapView testMainMapView = new MainMapView(testMainMapViewModel);
             testMainMapView.Render();
