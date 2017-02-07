@@ -25,6 +25,8 @@ namespace LRDL2.Views
             {
                 for (int width = 0; width < Configuration.MapWidth - 1; width++)
                 {
+
+                    Console.ForegroundColor = myMainMapView.ModelMap.Map[width, height].MyColor;
                     Console.Write(myMainMapView.ModelMap.Map[width, height].MySymbol);
 
                     if (width == Configuration.MapWidth - 2)
@@ -33,6 +35,8 @@ namespace LRDL2.Views
                     }
                 }
             }
+            //TODO: Keep as bright white?
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

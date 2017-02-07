@@ -10,7 +10,7 @@ namespace LRDL2.Tiles
         public FloorTile()
         {
             MySymbol = '.';
-            MyColor = ConsoleColor.DarkGray;
+            MyColor = ConsoleColor.DarkGreen;
         }
     }
 }
